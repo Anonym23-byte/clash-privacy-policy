@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kebijakan Privasi / Privacy Policy - Clash (ChaosChooser)</title>
+  <meta name="description" content="Kebijakan Privasi resmi untuk aplikasi Clash: Chaos Decision Maker. 100% Offline-first, Zero Data Collection.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;900&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F4F0EA;
+      --card-bg: #FFFFFF;
+      --text: #111111;
+      --text-muted: #555555;
+      --primary: #FFE600;
+      --accent-purple: #7C3AED;
+      --accent-green: #22C55E;
+      --accent-red: #EF4444;
+      --border: #000000;
+      --shadow: 6px 6px 0px #000000;
+      --shadow-sm: 3px 3px 0px #000000;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px 16px;
+    }
+
+    .wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* Neo-Brutalist Header Bar */
+    header {
+      background: var(--card-bg);
+      border: 4px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: 28px 24px;
+      margin-bottom: 24px;
+    }
+
+    .brand-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .app-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .app-title span.emoji {
+      font-size: 36px;
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 8px;
+    }
+
+    .lang-btn {
+      font-family: 'Space Grotesk', sans-serif;
+      background: #FFFFFF;
+      border: 3px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform 0.05s ease, background-color 0.2s ease;
+    }
+
+    .lang-btn:hover {
+      background-color: #FDF08A;
+    }
+
+    .lang-btn:active {
+      transform: translate(2px, 2px);
+      box-shadow: 1px 1px 0px var(--border);
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .badge-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0 6px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 800;
+      font-size: 11px;
+      padding: 4px 8px;
+      border: 2px solid var(--border);
+      box-shadow: 2px 2px 0px var(--border);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-yellow { background: var(--primary); }
+    .badge-green { background: #BBF7D0; }
+    .badge-purple { background: #DDD6FE; }
+
+    .meta-info {
+      font-size: 13px;
+      color: var(--text-muted);
+      border-top: 2px solid #E5E7EB;
+      padding-top: 12px;
+      margin-top: 12px;
+    }
+
+    /* Alert Banner */
+    .highlight-card {
+      background: #DCFCE7;
+      border: 3px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: 18px 20px;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+
+    .highlight-card strong {
+      color: #065F46;
+    }
+
+    /* Main Policy Container */
+    main {
+      background: var(--card-bg);
+      border: 4px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: 32px 28px;
+    }
+
+    .lang-section {
+      display: block;
+    }
+
+    .lang-section.hidden {
+      display: none;
+    }
+
+    h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      margin-top: 32px;
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 3px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: var(--primary);
+      border: 2px solid var(--border);
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #1F2937;
+      font-size: 15px;
+    }
+
+    ul, ol {
+      margin-left: 24px;
+      margin-bottom: 18px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: #1F2937;
+    }
+
+    li strong {
+      color: #000000;
+    }
+
+    .table-box {
+      overflow-x: auto;
+      margin: 18px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 3px solid var(--border);
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 2px solid var(--border);
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    th {
+      background: var(--primary);
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 900;
+    }
+
+    td {
+      background: #FFFFFF;
+    }
+
+    .contact-card {
+      background: #FEF3C7;
+      border: 3px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      padding: 16px 20px;
+      margin-top: 24px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 32px;
+      font-size: 13px;
+      color: var(--text-muted);
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+    }
+
+    /* Print Optimization */
+    @media print {
+      body { background: white; padding: 0; }
+      .wrapper { max-width: 100%; }
+      header, main, .highlight-card { box-shadow: none; border: 1px solid #000; }
+      .lang-switcher { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <!-- Header -->
+    <header>
+      <div class="brand-row">
+        <h1 class="app-title">
+          <span class="emoji">⚔️</span> Clash: ChaosChooser
+        </h1>
+        <div class="lang-switcher">
+          <button id="btn-id" class="lang-btn active" onclick="switchLanguage('id')">🇮🇩 Bahasa Indonesia</button>
+          <button id="btn-en" class="lang-btn" onclick="switchLanguage('en')">🇺🇸 English</button>
+        </div>
+      </div>
+
+      <div class="badge-bar">
+        <span class="badge badge-yellow">Google Play Policy Compliant</span>
+        <span class="badge badge-green">100% Offline-First</span>
+        <span class="badge badge-purple">Zero Data Collection</span>
+      </div>
+
+      <div class="meta-info">
+        <strong>Aplikasi:</strong> Clash — The Savage Decision Machine &nbsp;•&nbsp; 
+        <strong>Versi Kebijakan:</strong> 1.0.0 &nbsp;•&nbsp; 
+        <strong>Terakhir Diperbarui:</strong> 21 Oktober 2026
+      </div>
+    </header>
+
+    <!-- Top Summary Banner -->
+    <div class="highlight-card">
+      <div id="summary-id">
+        🛡️ <strong>Prinsip Privasi Kami:</strong> Aplikasi Clash beroperasi 100% secara lokal di memori perangkat Anda. Kami <strong>TIDAK PERNAH</strong> mengumpulkan, menyadap, mengunggah ke server cloud, ataupun memperjualbelikan data pribadi Anda kepada pihak manapun.
+      </div>
+      <div id="summary-en" style="display: none;">
+        🛡️ <strong>Our Privacy Core:</strong> Clash operates 100% locally on your device. We <strong>DO NOT</strong> collect, store on external servers, track, or sell your personal data to any third party.
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- ================= INDONESIAN VERSION ================= -->
+      <article id="content-id" class="lang-section">
+        <h2>1. Ikhtisar & Data yang Kami Kumpulkan</h2>
+        <p>Aplikasi Clash dirancang sebagai alat bantu pengambil keputusan acak dan hiburan santai tanpa akun atau login. Kami <strong>tidak mengumpulkan data identitas pribadi (Personally Identifiable Information - PII)</strong> seperti nama pengguna, alamat email, nomor telepon, kontak, maupun lokasi fisik/GPS pengguna.</p>
+        
+        <p>Semua data berikut disimpan secara eksklusif pada penyimpanan lokal perangkat Anda (Local Storage / AsyncStorage):</p>
+        <ul>
+          <li><strong>Daftar Pilihan / Preset Pertarungan:</strong> Nama-nama makanan, opsi kegiatan, atau peserta duel yang Anda ketikkan disimpan hanya di ponsel Anda.</li>
+          <li><strong>Riwayat Putusan (Kuburan Korban):</strong> Catatan riwayat hasil pertarungan dan eliminasi tersimpan secara offline di ponsel Anda dan dapat dihapus kapan saja melalui tombol pembersih di aplikasi.</li>
+          <li><strong>Preferensi Aplikasi:</strong> Pengaturan audio, bahasa antarmuka, dan tema (Terang / Midnight Gelap).</li>
+        </ul>
+
+        <h2>2. Izin Perangkat Keras (Device Permissions)</h2>
+        <p>Aplikasi ini hanya memanfaatkan fitur perangkat keras berikut khusus untuk interaksi permainan:</p>
+        <div class="table-box">
+          <table>
+            <thead>
+              <tr>
+                <th>Izin / Sensor</th>
+                <th>Tujuan Penggunaan</th>
+                <th>Penyimpanan Data</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Akselerometer / Gerak</strong></td>
+                <td>Mendeteksi guncangan ponsel (Shake to Chaos) dan memanipulasi arah gravitasi arena petarung secara real-time.</td>
+                <td>Hanya diolah di RAM, tidak pernah disimpan atau direkam.</td>
+              </tr>
+              <tr>
+                <td><strong>Getaran / Haptik</strong></td>
+                <td>Memberikan umpan balik fisik saat balok bertabrakan, tombol ditekan, atau kontestan tereliminasi.</td>
+                <td>Tidak ada data yang disimpan.</td>
+              </tr>
+              <tr>
+                <td><strong>Text-to-Speech (TTS)</strong></td>
+                <td>Membacakan nama pemenang dan komentar komentator secara suara sintetis di perangkat.</td>
+                <td>Diproses langsung oleh mesin suara lokal ponsel.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>3. Iklan & Layanan Pihak Ketiga (Third-Party Services)</h2>
+        <p>Aplikasi Clash mengutamakan pengalaman bermain yang menyenangkan. Jika di masa mendatang aplikasi menampilkan iklan melalui jaringan periklanan resmi seperti <strong>Google AdMob</strong>:</p>
+        <ul>
+          <li>Jaringan iklan dapat mengumpulkan pengenal iklan standar perangkat (seperti Google Advertising ID / AAID) untuk penayangan iklan yang sesuai dengan kebijakan Google Play.</li>
+          <li>Pengguna dapat mengatur ulang atau menonaktifkan personalisasi iklan kapan saja melalui <em>Pengaturan Android &gt; Google &gt; Iklan</em>.</li>
+          <li>Aplikasi Clash tidak menyematkan pelacak analitik pihak ketiga tersembunyi yang merekam aktivitas penjelajahan Anda.</li>
+        </ul>
+
+        <h2>4. Kepatuhan Google Play Data Safety</h2>
+        <p>Sesuai dengan formulir Pernyataan Keamanan Data (Data Safety) Google Play Console:</p>
+        <ul>
+          <li><strong>Data Pribadi yang Dikumpulkan:</strong> Tidak Ada (0).</li>
+          <li><strong>Data Pribadi yang Dibagikan:</strong> Tidak Ada.</li>
+          <li><strong>Keamanan Transfer Data:</strong> Tidak ada transfer data pengguna ke server eksternal karena seluruh fungsionalitas inti berjalan offline.</li>
+        </ul>
+
+        <h2>5. Perlindungan Privasi Anak (COPPA & GDPR-K)</h2>
+        <p>Aplikasi ini cocok untuk audiens umum dan tidak secara khusus menargetkan anak-anak di bawah usia 13 tahun (atau batas usia yang berlaku di yurisdiksi Anda). Karena kami tidak mengumpulkan data pribadi, aplikasi ini mematuhi prinsip <em>Children's Online Privacy Protection Act</em> (COPPA).</p>
+
+        <h2>6. Hak Pengguna & Penghapusan Data</h2>
+        <p>Anda memegang kendali 100% atas data yang berada di perangkat Anda:</p>
+        <ul>
+          <li>Anda dapat menghapus seluruh riwayat pertarungan kapan saja dengan membuka menu riwayat dan memilih <strong>"Bersihkan Kuburan"</strong>.</li>
+          <li>Anda dapat menghapus cache dan data aplikasi secara instan melalui menu Pengaturan ponsel Anda (<em>Settings &gt; Apps &gt; Clash &gt; Clear Data</em>).</li>
+          <li>Menghapus (*uninstall*) aplikasi Clash akan menghapus seluruh data lokal yang tersisa secara otomatis.</li>
+        </ul>
+
+        <h2>7. Penafian Hiburan (Disclaimer)</h2>
+        <p>Hasil keputusan, simulasi fisika balok, rolet jari, dan komentar sarkasme ("Savage Commentary") yang diproduksi oleh Clash ditujukan murni sebagai <strong>sarana hiburan dan pengambil keputusan kasual</strong>. Pengembang tidak bertanggung jawab atas perselisihan pribadi atau kerugian materil akibat penggunaan hasil aplikasi ini.</p>
+
+        <div class="contact-card">
+          <h2>8. Kontak Pengembang</h2>
+          <p>Jika Anda memiliki pertanyaan, saran, atau permintaan klarifikasi mengenai Kebijakan Privasi ini, silakan hubungi kami:</p>
+          <ul>
+            <li><strong>Pengembang:</strong> Clash Dev Team</li>
+            <li><strong>Email Dukungan:</strong> <a href="mailto:support@clash-app.com">support@clash-app.com</a> (ganti dengan email aktif Anda)</li>
+            <li><strong>Halaman GitHub:</strong> <a href="https://github.com" target="_blank" rel="noopener">Repository GitHub Proyek</a></li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- ================= ENGLISH VERSION ================= -->
+      <article id="content-en" class="lang-section hidden">
+        <h2>1. Overview & Data We Collect</h2>
+        <p>Clash: ChaosChooser is designed as an offline-first casual decision-maker and entertainment application. We <strong>do not collect any Personally Identifiable Information (PII)</strong> such as your real name, email address, phone number, physical location, contacts, or browsing history.</p>
+        
+        <p>The following data is stored exclusively on your device's local memory (Local Storage / AsyncStorage):</p>
+        <ul>
+          <li><strong>Custom Options & Presets:</strong> The battle options, food names, or participant lists you input are saved strictly inside your local device.</li>
+          <li><strong>Decision History (Grave of Decisions):</strong> Elimination logs and battle results are stored locally and can be cleared at any time via the in-app wipe button.</li>
+          <li><strong>User Preferences:</strong> Audio toggles, selected UI language, and color theme preferences (Light / Midnight Dark).</li>
+        </ul>
+
+        <h2>2. Device Hardware Permissions</h2>
+        <p>The app only requests hardware access strictly necessary for core interactive gameplay features:</p>
+        <div class="table-box">
+          <table>
+            <thead>
+              <tr>
+                <th>Hardware / Sensor</th>
+                <th>Intended Purpose</th>
+                <th>Data Handling</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Accelerometer / Motion</strong></td>
+                <td>Detects device shake events ("Shake to Chaos") and tilts arena gravity in real-time.</td>
+                <td>Processed in volatile RAM; never logged or transmitted.</td>
+              </tr>
+              <tr>
+                <td><strong>Vibration / Haptics</strong></td>
+                <td>Delivers tactile feedback when fighters collide or contestants are eliminated.</td>
+                <td>Zero data collected.</td>
+              </tr>
+              <tr>
+                <td><strong>Text-to-Speech (TTS)</strong></td>
+                <td>Generates synthesized voice announcements for battle commentary and winners.</td>
+                <td>Synthesized entirely by your device's built-in speech engine.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>3. Third-Party Services & Advertising</h2>
+        <p>Clash is built with an offline-first architecture. If advertisements are delivered through verified mobile ad networks (such as <strong>Google AdMob</strong>):</p>
+        <ul>
+          <li>The ad network may utilize standard, resettable advertising identifiers (e.g., Google Advertising ID / AAID) to deliver ads complying with Google Play Developer policies.</li>
+          <li>Users may reset or opt out of personalized ads at any time via their device system settings (<em>Android Settings &gt; Google &gt; Ads</em>).</li>
+          <li>Clash contains no hidden tracking SDKs that profile your activity outside the app.</li>
+        </ul>
+
+        <h2>4. Google Play Data Safety Compliance</h2>
+        <p>In accordance with Google Play's Data Safety Declaration guidelines:</p>
+        <ul>
+          <li><strong>Data Collected:</strong> None (0 bytes).</li>
+          <li><strong>Data Shared with Third Parties:</strong> None.</li>
+          <li><strong>Data Security:</strong> No sensitive user data is transmitted over the network for core features.</li>
+        </ul>
+
+        <h2>5. Children’s Privacy (COPPA Compliance)</h2>
+        <p>Clash is suitable for general audiences. Because we do not collect personal data from any user, this application complies with the <em>Children's Online Privacy Protection Act</em> (COPPA) and international child privacy regulations.</p>
+
+        <h2>6. User Control & Data Deletion</h2>
+        <p>You retain complete sovereignty over all data created within the app:</p>
+        <ul>
+          <li>You can delete your decision and fight histories at any moment by clicking <strong>"Bersihkan Kuburan" / "Clear History"</strong>.</li>
+          <li>You can wipe all app data immediately via your device application manager (<em>Settings &gt; Apps &gt; Clash &gt; Clear Storage</em>).</li>
+          <li>Uninstalling the app permanently purges all local databases.</li>
+        </ul>
+
+        <h2>7. Entertainment Disclaimer</h2>
+        <p>The outcomes, physical simulations, roulette picks, and savage commentary generated by Clash are intended strictly for <strong>casual decision-making and satirical entertainment</strong>. The developers assume no liability for personal disagreements, real-money bets, or damages arising from reliance upon the application's output.</p>
+
+        <div class="contact-card">
+          <h2>8. Developer Contact</h2>
+          <p>If you have any questions or inquiries regarding this Privacy Policy, please contact:</p>
+          <ul>
+            <li><strong>Developer:</strong> Clash Dev Team</li>
+            <li><strong>Support Email:</strong> <a href="mailto:support@clash-app.com">support@clash-app.com</a> (replace with your active email)</li>
+            <li><strong>Project Repository:</strong> <a href="https://github.com" target="_blank" rel="noopener">GitHub Project Page</a></li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2026 Clash (ChaosChooser). All rights reserved. &bull; Neo-Brutalist Offline-First Utility
+    </footer>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      const btnId = document.getElementById('btn-id');
+      const btnEn = document.getElementById('btn-en');
+      const contentId = document.getElementById('content-id');
+      const contentEn = document.getElementById('content-en');
+      const summaryId = document.getElementById('summary-id');
+      const summaryEn = document.getElementById('summary-en');
+
+      if (lang === 'en') {
+        btnEn.classList.add('active');
+        btnId.classList.remove('active');
+        contentEn.classList.remove('hidden');
+        contentId.classList.add('hidden');
+        summaryEn.style.display = 'block';
+        summaryId.style.display = 'none';
+        document.documentElement.lang = 'en';
+      } else {
+        btnId.classList.add('active');
+        btnEn.classList.remove('active');
+        contentId.classList.remove('hidden');
+        contentEn.classList.add('hidden');
+        summaryId.style.display = 'block';
+        summaryEn.style.display = 'none';
+        document.documentElement.lang = 'id';
+      }
+    }
+  </script>
+</body>
+</html>
